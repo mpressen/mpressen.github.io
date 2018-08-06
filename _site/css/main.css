@@ -49,6 +49,7 @@ a img {
 html {
   box-shadow: 0 0 0 30px #000 inset;
   padding: 0 30px;
+  font-size: 1.1;
 }
 body {
   display: flex;
@@ -109,7 +110,7 @@ h6 {
 }
 .tag {
   background-color: rgba(100, 100, 100, 0.1);
-  border: 1px solid rgba(35, 237, 237, 0.1)k;
+  border: 1px solid rgba(35, 237, 237, 0.1);
   padding: 0 3px;
   margin: 0 1px;
   border-radius: 5px;
@@ -127,14 +128,14 @@ h6 {
   position: fixed;
   width: 100%;
   z-index: 20;
-  height: 5vh;
+  height: 69px;
   box-sizing: border-box;
 }
 .header-logo {
   box-sizing: border-box;
   display: block;
   opacity: 0.5;
-  width: 5vh;
+  width: 69px;
 }
 .header-logo:hover,
 .header-logo:active {
@@ -145,7 +146,7 @@ h6 {
 }
 .header-nav {
   float: right;
-  padding: 2vh 40px 0 0;
+  padding: 27px 30px 0 0;
 }
 .header-nav > li {
   display: inline-block;
@@ -451,6 +452,7 @@ h6 {
 
 .cv-header {
   display: flex;
+  align-items: center;
   margin: 0 10mm;
 }
 .profile-pic-container, .cv-title {
@@ -496,21 +498,22 @@ h6 {
   flex: 1;
 }
 
-.main ul {
+ul {
   margin : 5px;
   list-style-type: none;
 }
 
-.story-header {
+.story-header, .skill {
   display: flex;
+  align-items: center;
 }
 
 
-.main ul li ~ li {
+.main ul li ~ li, .competences > ul > li ~ li {
   margin : 30px 0;
 }
 
-div.logo-job {
+div.logo-job, .skill-rating {
   flex: 1;
   text-align: right;
 }
@@ -524,11 +527,46 @@ div.logo-job {
   padding-left: 15px;
 }
 
+.competences .story-content {
+  padding-left: 0;
+}
+
+.story-content > ul {
+  margin: 0;
+}
+
+.title-skill {
+  color: #6397b5;
+}
+
+.skill > .info > h6 {
+  font-style: normal;
+  padding-left: 0;
+  line-height: 1.1;
+}
+
+.skill-rating {
+  font-size: 12px;
+}
+.fa-star, .fa-star-o {
+  color: #FF8904;
+  size: 7px;
+}
+
+.divers {
+  padding: 5px;
+  background-color: rgb(245, 245, 245, 1);
+}
+
+.too-small {
+    display: none;
+  }
+
 
 @media (max-width: 800px) {
   .cv {
     width: 100vw;
-    box-shadow:0;
+    box-shadow: none;
   }
   .post-aside {
     display: none;
@@ -610,9 +648,50 @@ div.logo-job {
   .
 }
 
-@media (max-width: 729px) {
+@media (max-width: 768px) {
+  .cv, .cv-body {
+    display: block;
+    height: auto;
+  }
+  .main {
+    border: none;
+  }
+}
+
+@media (max-width: 728px) {
   div.profile_pic_container {
     padding-top: 100px;
   }
+  .cv-header {
+    margin-bottom: 10px;
+  }
 }
+
+@media (max-width: 525px) {
+  .cv-header {
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .cv-header {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 268px) {
+  .cv-container {
+    display: none;
+  }
+  .too-small {
+    display: block;
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+}
+
 

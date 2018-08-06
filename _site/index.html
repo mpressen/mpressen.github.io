@@ -21,18 +21,17 @@
     <label for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav nav-links">
       <li><a href="/">CV</a></li>
-<li><a href="/">Portfolio</a></li>
-<li class="dropdown">
-	<a class="drop-trigger" href="/blog">Blog</a>
+<!-- <li class="dropdown">
+	<a class="drop-trigger" href="/blog">Portfolio</a>
 	<ul class="drop-menu">
-		<li>Mes derniers Posts</li>
+		<li>Mes derniers projets</li>
 		
 		<li><a href="/2016/11/04/title-of-second-post.html">This is the title of the second post</a></li>
 		
 		<li><a href="/2016/11/03/title-of-post.html">This is the title of the first post</a></li>
 		
 	</ul>
-</li>
+</li> -->
 
     </ul>
   </nav>
@@ -54,7 +53,7 @@
       </div>
     </header>
     <div class="cv-abstract">
-      <p class='italic'>Professeur des écoles reconverti, je suis un créatif et un 'technicien' passionné par le web, de la conception au déploiement.</p>
+      <p class='italic'>Professeur des écoles reconverti, je suis un créatif et un technicien passionné par le web, de la conception au déploiement.</p>
     </div>
     <div class="cv-body">
       <div class="main">
@@ -72,28 +71,15 @@
                 </div>
               </div>
               <div class="story-content">
-                <p class="tags">
-                  <span class='tag'>ruby</span>
-                  <span class='tag'>rails</span>
-                  <span class='tag'>postgreSQL</span>
-                  <span class='tag'>jQuery</span>
-                  <span class='tag'>bootstrap</span>
-                  |
-                  <span class='tag'>git</span>
-                  <span class='tag'>Rspec</span>
-                  <span class='tag'>circleCI</span>
-                  <span class='tag'>heroku</span>
-                  <span class='tag'>continuous delivery</span>
-                  |
-                  <span class='tag'>python 2.7</span>
-                  <span class='tag'>AWS S3</span>
-                  <span class='tag'>unix</span>
-                  <span class='tag'>shell</span>
-                  <span class='tag'>scripting</span>
-                </p>
                 <p>
-                  J'ai développé un intranet pour ce réseau de franchises spécialisé dans l'aide à domicile, sous la supervision bi-mensuelle d'un <a href="https://www.gembani.com/fr/">CTO</a> externalisé.
-                  J'ai conçu un système d'<a href="https://fr.wikipedia.org/wiki/Authentification_unique">authentification unique</a> autour d'Office 365 à l'aide du protocole <a href="https://fr.wikipedia.org/wiki/OAuth">OAuth</a> et de requêtes API, afin que les utilisateurs aient un portail unique vers toutes leurs ressources professionnelles. L'intranet centralise notamment du contenu pro via <a href="https://developer.microsoft.com/en-us/graph">Microsoft Graph</a>.  J'ai ajouté un back office avec la gem <a href="https://activeadmin.info/">ActiveAdmin</a>. J'ai ensuite intégré à l'intranet un dashboard de Business Intelligence, à l'aide de la gem graphique <a href="https://www.chartkick.com/">Chartkick</a>, et un système de mails automatiques, afin de mieux monitorer l'activité du réseau. Pour obtenir les datas nécessaires, j'ai codé une batterie de <a href="http://sikulix.com/">GUI scripts</a> et de <a href="http://www.stuartellis.name/articles/rake/">Rake tasks</a> que j'ai entièrement automatisé afin qu'ils se lancent seuls tous les jours ouvrés à partir de 18 heures, et qui <span class='italic'><a href="https://fr.wikipedia.org/wiki/Web_scraping">scrap</a></span> l'<a href="http://solutions.up-france.fr/programmes-publics-sociaux/gestion-activite/logiciel-service-personne">ERP</a> de l'entreprise. Pour plus d'information, voir <a href="https://www.dailymotion.com/video/x6clg1d">mon rapport de stage en vidéo</a>. Dans un autre domaine, j'ai aussi rationalisé l'administration des comptes numériques pour une économie de 9K&euro; chaque année.
+                  Senior Compagnie est un réseau de franchises spécialisé dans l'aide à domicile.<br>
+                  J'ai développé un intranet en <span class='tag'>Ruby on Rails 5</span> avec notamment :<br>
+                  - un système d'authentification unique (<span class='italic'>Single Sign-On</span>).<br>
+                  - un back office avec la gem ActiveAdmin.<br>
+                  - un dashboard de Business Intelligence.<br>
+                  J'ai aussi codé un système de <span class='italic'>nightly build</span> automatisant le lancement, les logs et la gestion d'erreurs d'une batterie de <span class='italic'>GUI robots</span> en <span class='tag'>python 2.7</span> combinés à des <span class='italic'>rake tasks</span> en Ruby. Le tout <span class='italic'>scrap</span> le progiciel de l'entreprise puis met à jour la base de donnée de l'intra.<br>
+                  Enfin, j'ai optimisé l'administration des comptes numériques de la boîte pour une économie de 9K&euro; chaque année.
+
                 </p>
               </div>
             </li>
@@ -114,8 +100,8 @@
                   <span class='tag'>communication</span>
                   <span class='tag'>relations publiques</span>
                 </p>
-                <p class='old-life'>
-                  J'ai été professeur de français sur l'isle de Wight en Angleterre et à Toledo (Espagne). J'ai ensuite été professeur d'anglais à Istanbul en Turquie. Enfin j'ai été professeur des écoles en maternelle à Redon (Ille-et-Vilaine). 
+                <p>
+                  La pratique de ce métier a développé mes <span class='italic'>softs skills</span>, mon habilité à m'exprimer en public et à endosser des responsabilités importantes.
                 </p>
               </div>
             </li>
@@ -128,7 +114,7 @@
               <div class="story-header">
                 <div class="info">
                   <h5>&#8226; École 42</h5>
-                  <h6>Paris. 3 ans</h6>
+                  <h6>Paris. 3 ans &#8594; en cours.</h6>
                 </div>
                 <div class="logo-job">
                   <img class="logo-pic" src="/images/ecole42.jpg">
@@ -142,32 +128,280 @@
                   <span class='tag'>gestion de projet</span>
                 </p>
                 <p>
-                  L'école 42 est une des meilleurs écoles de développement en France, basé sur une pédagogie de projets et un apprentissage peer-to-peer. Son processus de recrutement est extrêmement sélectif 
-                  (la fameuse <a href="https://www.youtube.com/watch?v=9K0SsECp4qg">piscine</a>). Actuellement en dernière année, l'école 42 m'a donné le mindset et la <a href="https://www.learnenough.com/story">sophistication technique</a> nécessaire pour être un bon développeur.
+                  Actuellement en dernière année, l'école 42 m'a donné le <span class='italic'>mindset</span> et la <a href="https://www.learnenough.com/command-line-tutorial#aside-technical_sophistication">sophistication technique</a> nécessaire pour être un développeur performant et agile.
                 </p>
               </div>
             </li>
             <li class="story">
               <div class="story-header">
                 <div class="info">
-                  <h5>&#8226; Master MEEF</h5>
+                  <h5>&#8226; Cursus universitaire</h5>
+                  <h6>Nantes. 5 ans.</h6>
+                </div>
+                <div class="logo-job">
+                  <img class="logo-pic" src="/images/université.gif">
                 </div>
               </div>
               <div class="story-content">
-                <p class='old-life'>
-                  Titulaire du CRPE (équivalent du CAPES pour le primaire). 
+                <p class="tags">
+                  <span class='tag'>esprit analytique</span>
+                  <span class='tag'>expression écrite</span>
+                  <span class='tag'>culture générale</span>
+                </p>
+                <p>
+                  - Titulaire du CRPE (Concours de Recrutement de Professeur des Écoles).<br>
+                  - Master MEEF (Métiers de l'Enseignement, de l'Education et de la Formation).<br>
+                  - M1 GAP (Gestion des Administrations Publiques, spécialité Union Européenne).<br>
+                  - Licence d'histoire.
                 </p>
               </div>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="competences">
-        <h4>Compétences</h4>
+        </div>
+        <div class="competences">
+          <h4>Compétences</h4>
+          <ul>
+            <li class="story">
+              <h5 class="title-skill">GENERAL</h5>
+              <div class="story-content">
+                <ul>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; CI/CD</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; TDD</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; OOP</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Git</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            
+            <li class="story">
+              <h5 class="title-skill">FRONT</h5>
+              <div class="story-content">
+                <ul>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Javascript ES6</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Vue.js</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; React</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; jQuery</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; CSS 3</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Bootstrap</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; SCSS</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; HTML5</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="story">
+              <h5 class="title-skill">BACK</h5>
+              <div class="story-content">
+                <ul>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Ruby on Rails</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; PHP symfony 4</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Node.js</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; SQL</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="story">
+              <h5 class="title-skill">INFRA</h5>
+              <div class="story-content">
+                <ul>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Heroku</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Docker</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; AWS</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Linux Server</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="story">
+              <h5 class="title-skill">AUTRE</h5>
+              <div class="story-content">
+                <ul>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Shell</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; C</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                  <li class="skill">
+                    <div class="info">
+                      <h6>&#9656; Jekyll</h6>
+                    </div>
+                    <div class="skill-rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="divers">
+          <h4>Divers</h4>
+          <ul>
+            <li>
+              <p>Anglais : <span class='italic'>fluent</span>.<br>
+                Mes liens : 
+                <a href="https://github.com/mpressen"><i class="fa fa-github"></i></a> | 
+                <a href="https://www.linkedin.com/in/maximilien-pressens%C3%A9-950794140/"><i class="fa fa-linkedin"></i></a> | 
+                <a href="https://stackoverflow.com/users/8131629/max-press"><i class="fa fa-stack-overflow"></i></a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <div class="too-small">
+    A Bigger screen is needed ;)
+  </div>
   </div>
   <footer class="footer">
   <a class="footer-logo" href="/">
@@ -177,18 +411,17 @@
   <nav>
     <ul class="footer-nav nav-links">
       <li><a href="/">CV</a></li>
-<li><a href="/">Portfolio</a></li>
-<li class="dropdown">
-	<a class="drop-trigger" href="/blog">Blog</a>
+<!-- <li class="dropdown">
+	<a class="drop-trigger" href="/blog">Portfolio</a>
 	<ul class="drop-menu">
-		<li>Mes derniers Posts</li>
+		<li>Mes derniers projets</li>
 		
 		<li><a href="/2016/11/04/title-of-second-post.html">This is the title of the second post</a></li>
 		
 		<li><a href="/2016/11/03/title-of-post.html">This is the title of the first post</a></li>
 		
 	</ul>
-</li>
+</li> -->
 
     </ul>
   </nav>
