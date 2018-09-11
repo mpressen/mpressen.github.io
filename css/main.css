@@ -152,6 +152,7 @@ h6 {
 .header-nav a,
 .drop-trigger {
   color: #fff;
+  cursor: default;
 }
 .nav-links a,
 .drop-trigger, .show-mobile-menu {
@@ -295,7 +296,7 @@ h6 {
 }
 .cv {
   box-sizing: border-box;
-  height:297mm; 
+  height:297mm;
   width:210mm ;
   margin: 32px auto;
   background-color: white;
@@ -520,13 +521,55 @@ div.logo-job, .skill-rating {
     padding-left: 0;
   }
   .header-nav .drop-trigger {
-    padding-right: 0;
+    display: none;
   }
-  .header-nav .drop-menu:after, 
+  .header-nav .drop-menu:after,
   .header-nav .drop-trigger:after {
     display: none;
   }
-  .
+  .header-nav .drop-menu:before {
+    display: none;
+  }
+  .header-nav > li.dropdown {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .header-nav > li:first-child {
+    margin: 5px auto;
+    padding: 0;
+    display: block;
+  }
+  .drop-menu {
+    display: block;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+  .drop-menu > li {
+    border-radius: 0;
+    margin: 5px auto;
+    background-color: inherit;
+    border: 0;
+  }
+  .drop-menu > li > a:visited {
+    color: white;
+  }
+  .drop-menu li ~ li {
+    border-top: 0;
+}
+  .drop-menu > li:last-child {
+    margin: 0;
+  }
+  .drop-menu > li > a {
+    text-align: center;
+    color: white;
+  }
+
+  .drop-menu > li:first-child {
+    display: none;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -589,5 +632,3 @@ div.logo-job, .skill-rating {
     display: none;
   }
 }
-
-
