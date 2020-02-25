@@ -46,6 +46,10 @@ em, i {
 a img {
   border: none;
 }
+.separator {
+  /* font-size: 4px; */
+  opacity: 0.2;
+}
 /* END RESET*/
 
 /* GLOBAL STYLES */
@@ -432,6 +436,14 @@ div.logo-job {
 .misc {
   padding: 5px;
   background-color: rgb(245, 245, 245, 1);
+}
+
+.misc li {
+  line-height: 1.5;
+  font-size: 0.8em;
+}
+.social-links, .social-links li {
+  display: inline;
 }
 
 .too-small {
