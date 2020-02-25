@@ -1,18 +1,58 @@
 <head>
-  {% if page.title %}
-  <title>{{ page.title }} | Maximilien Pressensé </title>
-  {% else %}
-  <title>Maximilien Pressensé</title>
-  {% endif %}
-  {% if page.description %}
-  <meta name="description" content="{{ page.description }} de Maximilien Pressensé, développeur web junior, en fin d'étude à l'école 42.">
-  {% else %}
-  <meta name="description" content="Github Pages de Maximilien Pressensé, développeur web junior, en fin d'étude à l'école 42.">
-  {% endif %}
-  <link href="/images/logo.png" rel="icon">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta author="Maximilien Pressensé">
+  <link href="/images/logo.png" rel="icon">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
+  <meta property="og:type" content="document" />
+  <meta name="twitter:card" content="summary" />
+
+  {% if page.title %}
+  <title>{{ page.title }} | Maximilien Pressensé</title>
+  <meta property="og:title" content="{{ page.title }} | Maximilien Pressensé" />
+  <meta name="twitter:title" content="{{ page.title }} | Maximilien Pressensé" />
+  {% else %}
+  <title>Maximilien Pressensé</title>
+  <meta property="og:title" content="Maximilien Pressensé" />
+  <meta name="twitter:title" content="Maximilien Pressensé" />
+  {% endif %}
+
+  {% if page.keywords %}
+  <meta name="description" content="{{ page.keywords }}, Maximilien Pressensé">
+  {% else %}
+  <meta name="description" content="Maximilien Pressensé">
+  {% endif %}
+
+  {% if page.description %}
+  <meta name="description" content="Maximilien Pressensé's {{ page.description }}">
+  <meta property="og:description" content="Maximilien Pressensé's {{ page.description }}" />
+  <meta name="twitter:description" content="Maximilien Pressensé's {{ page.description }}" />
+  {% else %}
+  <meta name="description" content="Maximilien Pressensé's page">
+  <meta property="og:description" content="Maximilien Pressensé's page" />
+  <meta name="twitter:description" content="Maximilien Pressensé's page" />
+  {% endif %}
+
+
+  {% if page.url %}
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta name="twitter:url" content="{{ page.url }}" />
+  {% else %}
+  <meta property="og:url" content="https://mpressen.github.io/" />
+  <meta name="twitter:url" content="https://mpressen.github.io/" />
+  {% endif %}
+
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image }}" />
+  <meta name="twitter:image" content="{{ page.image }}" />
+  {% else %}
+  <meta property="og:image"
+    content="https://maximilien-pressense-public-images.s3.eu-west-3.amazonaws.com/profile_pic.jpeg" />
+  <meta name="twitter:image"
+    content="https://maximilien-pressense-public-images.s3.eu-west-3.amazonaws.com/profile_pic.jpeg" />
+  {% endif %}
 </head>
