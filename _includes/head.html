@@ -1,5 +1,4 @@
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta author="Maximilien Pressensé">
@@ -10,15 +9,15 @@
   <link rel="stylesheet" href="/css/main.css">
   <meta property="og:type" content="document" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@MaxPressense">
+  <meta name="twitter:creator" content="@MaxPressense">
 
   {% if page.title %}
   <title>{{ page.title }} | Maximilien Pressensé</title>
   <meta property="og:title" content="{{ page.title }} | Maximilien Pressensé" />
-  <meta name="twitter:title" content="{{ page.title }} | Maximilien Pressensé" />
   {% else %}
   <title>Maximilien Pressensé</title>
   <meta property="og:title" content="Maximilien Pressensé" />
-  <meta name="twitter:title" content="Maximilien Pressensé" />
   {% endif %}
 
   {% if page.keywords %}
@@ -30,29 +29,21 @@
   {% if page.description %}
   <meta name="description" content="Maximilien Pressensé's {{ page.description }}">
   <meta property="og:description" content="Maximilien Pressensé's {{ page.description }}" />
-  <meta name="twitter:description" content="Maximilien Pressensé's {{ page.description }}" />
   {% else %}
   <meta name="description" content="Maximilien Pressensé's page">
   <meta property="og:description" content="Maximilien Pressensé's page" />
-  <meta name="twitter:description" content="Maximilien Pressensé's page" />
   {% endif %}
 
 
   {% if page.url %}
   <meta property="og:url" content="{{ page.url }}" />
-  <meta name="twitter:url" content="{{ page.url }}" />
   {% else %}
   <meta property="og:url" content="https://mpressen.github.io/" />
-  <meta name="twitter:url" content="https://mpressen.github.io/" />
   {% endif %}
 
   {% if page.image %}
   <meta property="og:image" content="{{ page.image }}" />
-  <meta name="twitter:image" content="{{ page.image }}" />
   {% else %}
-  <meta property="og:image"
-    content="https://maximilien-pressense-public-images.s3.eu-west-3.amazonaws.com/profile_pic.jpeg" />
-  <meta name="twitter:image"
-    content="https://maximilien-pressense-public-images.s3.eu-west-3.amazonaws.com/profile_pic.jpeg" />
+  <meta property="og:image" content="https://mpressen.github.io/images/profile_pic_pro.jpeg" />
   {% endif %}
 </head>
