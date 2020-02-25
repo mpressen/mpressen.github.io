@@ -59,7 +59,7 @@ h1,h2,h3,h4,h6 {
   font-family: 'Raleway', helvetica, sans;
   font-weight: 100;
 }
-.content-container {
+main {
   display: flex;
   flex: 1 1 auto;
   padding-top: 69px;
@@ -104,8 +104,15 @@ h6 {
 }
 
 .tags {
-  margin: 5px 0;
+  margin: 5px 0 !important;
 }
+
+.tags > li {
+  display: inline;
+  line-height: 1.5;
+  font-size: 0.8em;
+}
+
 .tag {
   background-color: rgba(100, 100, 100, 0.1);
   border: 1px solid rgba(35, 237, 237, 0.1);
@@ -336,10 +343,8 @@ h6 {
   align-items: center;
   margin: 0 10mm;
 }
-.profile-pic-container, .cv-title {
-  display: inline-block;
-}
 .cv-title {
+  display: inline-block;
   flex: 1;
   text-align: center;
   padding-top: 5mm;
@@ -351,9 +356,11 @@ h6 {
   margin-top: 15px;
 }
 .profile-pic {
+  display: inline-block;
   width: 40mm;
   height: auto;
   border-radius: 100mm;
+  margin-bottom: 2px;
 }
 
 .cv-abstract {
@@ -384,17 +391,11 @@ h6 {
   list-style-type: none;
 }
 
-.story-header, .skill {
-  display: flex;
-  align-items: center;
-}
-
-
 .main ul li ~ li, .competences > ul > li ~ li {
   margin : 30px 0;
 }
 
-div.logo-job, .skill-rating {
+div.logo-job {
   flex: 1;
   text-align: right;
 }
@@ -404,37 +405,31 @@ div.logo-job, .skill-rating {
   height: 40px;
 }
 
-.story-content {
+.element-content {
   padding-left: 15px;
-}
-
-.competences .story-content {
-  padding-left: 0;
-}
-
-.story-content > ul {
   margin: 0;
 }
 
-.title-skill {
+.competences .element-content {
+  padding-left: 0;
+}
+
+.subset_title {
   color: #6397b5;
 }
 
-.skill > .info > h6 {
+.skill > h6 {
   font-style: normal;
   padding-left: 0;
   line-height: 1.1;
 }
 
-.skill-rating {
-  font-size: 12px;
-}
 .fa-star, .fa-star-o {
   color: #FF8904;
   size: 7px;
 }
 
-.divers {
+.misc {
   padding: 5px;
   background-color: rgb(245, 245, 245, 1);
 }
@@ -606,10 +601,6 @@ div.logo-job, .skill-rating {
 }
 
 @media (max-width: 350px) {
-  .story-header {
-    display: block;
-    text-align: center;
-  }
   div.logo-job {
     text-align: center;
   }
@@ -628,7 +619,7 @@ div.logo-job, .skill-rating {
 }
 
 @media (max-width: 150px) {
-  .content-container, .header, .footer, .too-small {
+  main, .header, .footer, .too-small {
     display: none;
   }
 }
