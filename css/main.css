@@ -68,12 +68,10 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans';
-  /* font-family: 'Open Sans', arial, sans; */
   min-height: 100vh;
 }
 h1,h2,h3,h4,h6 {
   font-family: 'Raleway';
-  /* font-family: 'Raleway', helvetica, sans; */
   font-weight: 100;
 }
 main {
@@ -90,14 +88,14 @@ h2 {
   font-size: 2em;
 }
 a {
-  color: #6397b5;
+  color: #236e99;
 }
 p {
   line-height: 1.5;
   font-size: 0.8em;
 }
 h4 {
-  color: #999;
+  color: rgb(99, 97, 97);
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -251,7 +249,7 @@ h6 {
 }
 .drop-menu li:first-child {
   border-radius: 5px 5px 0 0;
-  color: #999;
+  color: rgb(99, 97, 97);
   font-size: 0.5em;
   padding: 1em 1em 0.25em;
   text-align: right;
@@ -432,7 +430,7 @@ div.logo-job {
 }
 
 .subset_title {
-  color: #6397b5;
+  color: #236e99;
 }
 
 .skill > h6 {
