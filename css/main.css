@@ -3,15 +3,12 @@
   src: url('fonts/OpenSans-Regular.ttf');
   font-display: swap
 }
-
 @font-face {
   font-family: 'Raleway';
   src: url('fonts/Raleway-Thin.ttf');
   font-display: swap
 }
-
 /* RESET */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -58,7 +55,6 @@ em, i {
 a img {
   border: none;
 }
-
 .with-margin-bottom {
   margin-bottom: 10px;
 }
@@ -101,7 +97,6 @@ h4 {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
 h5 {
   font-weight: bold;
   line-height: 1.5;
@@ -111,24 +106,20 @@ h6 {
   font-size: 1em;
   font-style:italic;
 }
-
 .italic {
   font-style: italic;
 }
 .bold {
   font-weight: bold;
 }
-
 .tags {
   margin: 5px 0 !important;
 }
-
 .tags > li {
   display: inline;
   line-height: 1.5;
   font-size: 0.8em;
 }
-
 .tag {
   background-color: rgba(100, 100, 100, 0.1);
   border: 1px solid rgba(35, 237, 237, 0.1);
@@ -179,7 +170,7 @@ h6 {
 }
 .nav-links a,
 .drop-trigger, .show-mobile-menu {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -250,11 +241,6 @@ h6 {
 }
 .drop-menu li:first-child {
   border-radius: 5px 5px 0 0;
-  color: rgb(99, 97, 97);
-  font-size: 0.5em;
-  padding: 1em 1em 0.25em;
-  text-align: right;
-  text-transform: uppercase;
 }
 .drop-menu li:last-child {
   border-radius: 0 0 5px 5px;
@@ -271,14 +257,6 @@ h6 {
 .drop-menu a:hover {
   background-color: rgba(0,0,0,0.1);
   color: #333;
-}
-/* HIDE IN THE FOOTER */
-.footer .dropdown:hover .drop-menu,
-.footer .drop-trigger:after {
-  display: none;
-}
-.footer .drop-trigger {
-  padding-right: 0;
 }
 
 /* FOOTER STYLES */
@@ -297,13 +275,6 @@ h6 {
 }
 .footer h3 span {
   color: #aaa;
-}
-.footer-nav li {
-  display: inline-block;
-  margin: 2em 1em 0;
-}
-.footer-nav a {
-  color: #ccc;
 }
 
 /* MOBILE MENU */
@@ -329,17 +300,14 @@ h6 {
   display: flex;
   flex-direction: column;
 }
-
 .upload {
   position: relative;
   box-sizing: border-box;
   margin: 1px;
 }
-
 .cv:hover .fa-upload {
   opacity: 0.7;
 }
-
 .fa-upload {
   position: absolute;
   border: 1px solid white;
@@ -348,12 +316,10 @@ h6 {
   padding: 4px;
   opacity: 0.3;
 }
-
 .fa-upload:hover {
   border: 1px solid #6397b5;
   background-color: rgba(0, 0, 0, 0.05);
 }
-
 .cv-header {
   display: flex;
   align-items: center;
@@ -378,78 +344,63 @@ h6 {
   border-radius: 100mm;
   margin-bottom: 2px;
 }
-
 .cv-abstract {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 2mm 0;
   text-align: center;
 }
-
 .cv-body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 5mm 0 0;
   flex: 1;
   display: flex;
 }
-
 .main {
   flex: 3;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .competences {
   padding-left: 5mm;
   flex: 1;
 }
-
 .cv-container ul {
   margin : 5px;
   list-style-type: none;
 }
-
 .main ul li ~ li, .competences > ul > li ~ li {
   margin : 30px 0;
 }
-
 div.logo-job {
   flex: 1;
   text-align: right;
 }
-
 .logo-pic {
   width: auto;
   height: 40px;
 }
-
 .element-content {
   padding-left: 15px;
   margin: 0;
 }
-
 .competences .element-content {
   padding-left: 0;
 }
-
 .subset_title {
   color: #236e99;
 }
-
 .skill > h6 {
   font-style: normal;
   padding-left: 0;
   line-height: 1.1;
 }
-
 .fa-star, .fa-star-o {
   color: #FF8904;
   size: 7px;
 }
-
 .misc {
   padding: 5px;
   background-color: rgb(245, 245, 245, 1);
 }
-
 .misc li {
   line-height: 1.5;
   font-size: 0.8em;
@@ -475,9 +426,6 @@ div.logo-job {
   .header-nav > li ~ li {
     padding-left: 0.25em;
   }
-  .nav-links a {
-    font-size: 3.25vw;
-  }
   .header-logo {
     left: auto;
   }
@@ -494,18 +442,18 @@ div.logo-job {
     background-color: #444;
     box-sizing: border-box;
     left: 0;
-    max-height: 0;
+    height: 0;
     overflow: hidden;
     padding: 0;
     position: absolute;
     text-align: center;
     top: 69px;
-    transition: all 0.8s ease-in-out;
+    transition: height 0.5s ease-in-out;
     width: 100vw;
     z-index: 9;
   }
   .mobile-menu-check:checked ~ .header-nav {
-    max-height: 1000px;
+    height: 77.2px;
   }
   .mobile-menu-check:checked ~ .show-mobile-menu:after {
     background-color: #000;
@@ -559,7 +507,7 @@ div.logo-job {
   }
   .drop-menu > li {
     border-radius: 0;
-    margin: 5px auto;
+    margin: 0;
     background-color: inherit;
     border: 0;
   }
@@ -568,19 +516,11 @@ div.logo-job {
   }
   .drop-menu li ~ li {
     border-top: 0;
-}
-  .drop-menu > li:last-child {
-    margin: 0;
   }
   .drop-menu > li > a {
     text-align: center;
     color: white;
   }
-
-  .drop-menu > li:first-child {
-    display: none;
-  }
-
 }
 
 @media (max-width: 768px) {
@@ -607,7 +547,6 @@ div.logo-job {
     margin: 0;
   }
 }
-
 
 @media (max-width: 450px) {
   .cv-header {
