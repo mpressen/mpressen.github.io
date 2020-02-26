@@ -1,6 +1,6 @@
 # My online resume.
 
-Static site, powered by Jekyll.
+Static site, powered by [Jekyll](https://jekyllrb.com/).
 
 [Light House Report Viewer](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fmpressen.github.io%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext) 
 
