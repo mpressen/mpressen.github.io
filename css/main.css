@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Thin.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* RESET */
 
 html, body, div, span, applet, object, iframe,
@@ -55,11 +67,13 @@ a img {
 body {
   display: flex;
   flex-direction: column;
-  font-family: 'Open Sans', arial, sans;
+  font-family: 'Open Sans';
+  /* font-family: 'Open Sans', arial, sans; */
   min-height: 100vh;
 }
 h1,h2,h3,h4,h6 {
-  font-family: 'Raleway', helvetica, sans;
+  font-family: 'Raleway';
+  /* font-family: 'Raleway', helvetica, sans; */
   font-weight: 100;
 }
 main {
