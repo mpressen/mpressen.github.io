@@ -58,8 +58,9 @@ em, i {
 a img {
   border: none;
 }
-.separator {
-  opacity: 0.2;
+
+.with-margin-bottom {
+  margin-bottom: 10px;
 }
 /* END RESET*/
 
