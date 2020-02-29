@@ -406,6 +406,14 @@ div.logo-job {
   display: inline;
 }
 
+.social-links li {
+  display: inline;
+  margin-right: 20px;
+}
+.social-links li:last-child {
+  margin-right: 0px;
+}
+
 @media (max-width: 800px) {
   .cv {
     width: 100vw;
