@@ -44,14 +44,17 @@ image: https://mpressen.github.io/images/profile_pic_pro.jpeg
         <section class="exp">
           <h4>Expériences</h4>
           <ul>
-            <li itemprop="hasOccupation" itemscope itemtype="https://schema.org/EmployeeRole">
+            <li itemprop="worksFor" itemscope itemtype="https://schema.org/EmployeeRole">
               <h5>&#8226; [FREELANCE] <span itemprop="roleName">Développeur back-end</span></h5>
-              <h6>Paris. <time>9 mois</time> : <time itemprop="startDate" content="2019-01-01">01/19</time> &#8594;
+              <h6><span itemscope><span itemprop='location' id="location-wemind">Paris</span></span>. <time>9
+                  mois</time> :
+                <time itemprop="startDate" content="2019-01-01">01/19</time> &#8594;
                 <time itemprop="endDate" content="2019-09-30">09/19</time>.</h6>
               <p class="element-content">
-                <span itemscope itemprop="worksFor" itemtype="https://schema.org/Corporation"><a itemprop="url"
-                    rel="external noopener" target="_blank" href="https://www.wemind.io/"><span
-                      itemprop="name">Wemind</span></a> est <span itemprop="description">une
+                <span itemscope itemprop="worksFor" itemtype="https://schema.org/Corporation"
+                  itemref='location-wemind'><a itemprop="url" rel="external noopener" target="_blank"
+                    href="https://www.wemind.io/"><span itemprop="name">Wemind</span></a> est <span
+                    itemprop="description">une
                     start-up dans l'assurance, à l'attention des freelances.</span></span><br>
                 <span itemprop="description">J'ai travaillé sur un monolithe <span class='tag'>Ruby on Rails</span>,
                   déployé sous <span class='tag'>Semaphoreci</span> et <span class='tag'>Heroku</span>, avec méthodes
@@ -61,13 +64,14 @@ image: https://mpressen.github.io/images/profile_pic_pro.jpeg
                   développeurs.</span>
               </p>
             </li>
-            <li itemprop="hasOccupation" itemscope itemtype="https://schema.org/EmployeeRole">
+            <li itemprop="worksFor" itemscope itemtype="https://schema.org/EmployeeRole">
               <h5>&#8226; [CDI & STAGE] <span itemprop="roleName">Développeur fullstack</span></h5>
-              <h6>Paris. <time>13 mois</time> : <time itemprop="startDate" content="2017-06-01">06/17</time> &#8594;
-                <time itemprop="endDate" content="2018-07-07">07/18</time>.</h6>
+              <h6><span itemscope><span itemprop='location' id="location-sc">Paris</span>. <time>13 mois</time> : <time
+                    itemprop="startDate" content="2017-06-01">06/17</time> &#8594;
+                  <time itemprop="endDate" content="2018-07-07">07/18</time>.</h6>
               <p class="element-content">
-                <span itemprop="worksFor" itemscope itemtype="https://schema.org/Corporation"><a itemprop="url"
-                    rel="external noopener" target="_blank" href="https://senior-compagnie.fr/"><span
+                <span itemprop="worksFor" itemscope itemtype="https://schema.org/Corporation" itemref='location-sc'><a
+                    itemprop="url" rel="external noopener" target="_blank" href="https://senior-compagnie.fr/"><span
                       itemprop="name">Senior Compagnie</span></a> est <span itemprop="description">un réseau de
                     franchises spécialisé dans l'aide à domicile.</span><br></span>
                 <span itemprop="description"> J'ai développé un intranet en <span class='tag'>Ruby on Rails</span> avec
@@ -81,7 +85,7 @@ image: https://mpressen.github.io/images/profile_pic_pro.jpeg
                   l'intra.</span>
               </p>
             </li>
-            <li itemprop="hasOccupation" itemscope itemtype="https://schema.org/EmployeeRole">
+            <li itemprop="worksFor" itemscope itemtype="https://schema.org/EmployeeRole">
               <h5>&#8226; [CDI] <span itemprop="roleName">Professeur en école primaire</span></h5>
               <h6>Angleterre, Espagne, Turquie, France. <time>4 ans</time>.</h6>
               <div class="element-content">
@@ -104,7 +108,7 @@ image: https://mpressen.github.io/images/profile_pic_pro.jpeg
           <ul>
             <li itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
               <h5>&#8226; École <span itemprop="name">42</span></h5>
-              <h6><span itemprop="addressLocality">Paris</span>. <time>2 ans</time>.</h6>
+              <h6><span itemprop="location">Paris</span>. <time>2 ans</time>.</h6>
               <div class="element-content">
                 <ul class="tags">
                   <li class='tag'>apprendre à apprendre</li>
