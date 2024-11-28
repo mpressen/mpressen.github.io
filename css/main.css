@@ -160,7 +160,6 @@ h6 {
 .header-nav a,
 .drop-trigger {
   color: #fff;
-  cursor: default;
 }
 .nav-links a,
 .drop-trigger, .show-mobile-menu {
@@ -172,12 +171,6 @@ h6 {
 .nav-links a:hover,
 .nav-links a:active  {
   color: #ed6e2f;
-}
-.header-nav > li:first-child a {
-  color: #ed6e2f;
-}
-.header-nav > li:first-child a:hover {
-  color: #fff;
 }
 
 /* DROPDOWN STYLES */
