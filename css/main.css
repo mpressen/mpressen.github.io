@@ -445,7 +445,7 @@ div.logo-job {
     z-index: 9;
   }
   .mobile-menu-check:checked ~ .header-nav {
-    height: 77.2px;
+    height: 170px;
   }
   .mobile-menu-check:checked ~ .show-mobile-menu:after {
     background-color: #000;
